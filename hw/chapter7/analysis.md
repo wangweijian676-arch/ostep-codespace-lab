@@ -88,6 +88,7 @@ Non-preemptive SJF: once a job starts execution, it cannot be preempted. The sch
 Job0 has a burst time of 100, and Job1 has burst times of 200, 500 and 1000 respectively. Both jobs arrive at time 0. Since Job0 is shorter, it always runs first.
 - Verified result / 验证结果:q6_100,200.txt、q6_100,500.txt、q6_100,1000.txt
 - Analysis / 分析:ARG jlist 100,200 ARG jlist 100,500 ARG jlist 100,1000
+## Q7
 As the time quantum increases, the response time of RR scheduling increases. A larger quantum means jobs later in the ready queue must wait longer to get their first access to the CPU.
 For N jobs arriving at time 0, the worst-case response time equation:
 Rworst=(N-1)*q
