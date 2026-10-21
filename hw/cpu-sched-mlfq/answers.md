@@ -13,7 +13,6 @@
 [ time 8 ] Run JOB 1 at PRIORITY 0 [ TICKS 2 ALLOT 1 TIME 0 (of 4) ]
 [ time 9 ] FINISHED JOB 1
 
-
   Job  0: startTime   0 - response   0 - turnaround   8
   Job  1: startTime   0 - response   3 - turnaround   9
   Avg  1: startTime n/a - response 1.50 - turnaround 8.50
@@ -438,5 +437,5 @@ IO DONE
   Job  0: startTime   0 - response   0 - turnaround 118
   Job  1: startTime   0 - response  10 - turnaround 125
   Avg  1: startTime n/a - response 5.00 - turnaround 121.50
-  
+
   -I places a job that has just completed I/O at the front of the current queue. Without -I, the job is placed at the end of the queue. Run the following two commands with the same workload, then compare the execution traces to see when the job resumes running:
