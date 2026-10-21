@@ -1,4 +1,5 @@
 ## Q1
+```
 [ time 0 ] JOB BEGINS by JOB 0
 [ time 0 ] JOB BEGINS by JOB 1
 [ time 0 ] Run JOB 0 at PRIORITY 1 [ TICKS 2 ALLOT 1 TIME 4 (of 5) ]
@@ -16,7 +17,9 @@
   Job  0: startTime   0 - response   0 - turnaround   8
   Job  1: startTime   0 - response   3 - turnaround   9
   Avg  1: startTime n/a - response 1.50 - turnaround 8.50
+  ```
 ## Q2
+```
 图 8.2
   Job  0: startTime   0 - response   0 - turnaround 200
   Avg  0: startTime n/a - response 0.00 - turnaround 200.00
@@ -37,16 +40,22 @@
   Job  0: startTime   0 - response   0 - turnaround 560
   Job  1: startTime   0 - response  10 - turnaround 600
   Avg  1: startTime n/a - response 5.00 - turnaround 580.00
+```
 ## Q3
+```
   Job  0: startTime   0 - response   0 - turnaround 174
   Job  1: startTime   0 - response   7 - turnaround 178
   Job  2: startTime   0 - response  10 - turnaround 175
   Avg  2: startTime n/a - response 5.67 - turnaround 175.67
+```
 ## Q4
+```
   Job  0: startTime   0 - response   0 - turnaround 20000
   Job  1: startTime 300 - response   0 - turnaround 10101
   Avg  1: startTime n/a - response 0.00 - turnaround 15050.50
+```
 ## Q5
+```
 Given:
 Time quantum of the highest queue q=10ms
 Let the boost period be B (boost priority every B ms).
@@ -54,7 +63,9 @@ After the long job is boosted each time, it can get at most 10 ms of CPU time.
 Requirement:
 10/B>=0.05B<=10/0.05+200ms
 Conclusion: Boost at most once every 200 ms (-B 200) to guarantee the long-running job receives at least 5% of the CPU.
+```
 ## Q6
+```
 NO-I
 [ time 0 ] JOB BEGINS by JOB 0
 [ time 0 ] JOB BEGINS by JOB 1
@@ -246,7 +257,9 @@ IO DONE
   Job  0: startTime   0 - response   0 - turnaround 118
   Job  1: startTime   0 - response  10 - turnaround 125
   Avg  1: startTime n/a - response 5.00 - turnaround 121.50
+```
 -I
+```
 [ time 0 ] JOB BEGINS by JOB 0
 [ time 0 ] JOB BEGINS by JOB 1
 [ time 0 ] Run JOB 0 at PRIORITY 2 [ TICKS 9 ALLOT 1 TIME 99 (of 100) ]
@@ -437,5 +450,6 @@ IO DONE
   Job  0: startTime   0 - response   0 - turnaround 118
   Job  1: startTime   0 - response  10 - turnaround 125
   Avg  1: startTime n/a - response 5.00 - turnaround 121.50
+```
 
   -I places a job that has just completed I/O at the front of the current queue. Without -I, the job is placed at the end of the queue. Run the following two commands with the same workload, then compare the execution traces to see when the job resumes running:
